@@ -396,13 +396,13 @@ footer small{
     background-color: transparent;
     font-weight: lighter;
     color: white;
-    font-size: 1vw;
+    font-size: 0.8em;
 }
 
 footer small span{
     background-color: transparent;
     color: grey;
-    font-size: 1vw;
+    font-size: 0.8em;
 }
 
 header{
@@ -417,8 +417,12 @@ header{
 
 @media(max-width:1024px){
     .cards-container{
-        grid-template-columns: repeat(3,1fr);
-}}
+        grid-template-columns: repeat(3,1fr);    
+    }
+    footer{
+        flex-direction: column;
+    }
+}
 
 
 @media(max-width:768px){
@@ -429,6 +433,9 @@ header{
 @media(max-width:480px){
     .cards-container{
         grid-template-columns: repeat(1,1fr);
-}}
+    }
+
+    
+}
 
 
