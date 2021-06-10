@@ -48,11 +48,15 @@ nav i{
     margin-right: 1.5%;
 }
 
-/* .menu{
-    align-items: baseline;
-    transition: top 0.1s;
 
-} */
+@media(max-width:768px){
+    .menu{
+        align-items: baseline;
+    } 
+   }
+
+
+
 
 
 
