@@ -331,8 +331,6 @@ a >*{    background-color: transparent;
     grid-template-rows: auto;
     row-gap: 10px;
     /* background-image: url('https://images.unsplash.com/photo-1425321395722-b1dd54a97cf3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIxODgyNzk2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600'); */
-    transform: scale(0,0);
-    transition: transform 1s;
     background:transparent;
     position: relative;
 
@@ -349,6 +347,8 @@ a >*{    background-color: transparent;
     backdrop-filter: blur(5px);
     border-radius: 50px;
     position: relative;
+    opacity: 0;
+    transition: opacity 2s ease-out;
 }
 
 
@@ -380,7 +380,7 @@ a >*{    background-color: transparent;
 footer{
     width: 100%;
     position: relative;
-    height:10vh;
+    height:15vh;
     z-index:1 ;
     bottom: 0px;
     background-color: #171a1d;
@@ -421,6 +421,11 @@ header{
     }
     footer{
         flex-direction: column;
+        padding-top: 10px;
+    }
+    footer small{
+        font-size: 1em;
+        padding: 2px 0;
     }
 }
 

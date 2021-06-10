@@ -6,7 +6,7 @@ const menu = document.getElementById('menu')
 const intro = document.querySelector('.intro')
 const introP = document.getElementById('par')
 const introH1 = document.getElementById('h1')
-const cards = document.querySelector('.cards-container')
+const cards = document.querySelectorAll('.card')
 
 //add event listner
 navIcon.addEventListener('click',toggleFunc);
@@ -31,8 +31,9 @@ function opacityFunc() {
 
 window.addEventListener('load',showCards);
 
-
-function showCards() {
-       cards.style.transform='scale(1,1)'
-    
+function showCards(){
+    cards.forEach(element=>{
+        element.style.opacity='100';
+        console.log(element)
+    })
 }
