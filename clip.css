@@ -1,5 +1,8 @@
 body{
-    width: 100vw;       
+    /* width: 100vw;      */
+    overflow-y: scroll; 
+    margin: 0;
+    padding: 0;
 }
 
 .cards-container::before{
@@ -29,6 +32,10 @@ body{
 
 }
 
+.menu-links a{
+    font-weight: bold;
+}
+
 footer{
     height: 10vh;
     bottom: 0;
@@ -49,6 +56,11 @@ nav i{
 }
 
 
+/* @media(min-width:1920px){
+    .cards-container{
+        height: 75vh;
+    } 
+   } */
 @media(max-width:768px){
     .menu{
         align-items: baseline;
@@ -56,7 +68,6 @@ nav i{
    }
 
 
-
-
-
-
+.cards-container{
+    min-height: 75vh;
+}

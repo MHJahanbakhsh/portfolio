@@ -18,10 +18,14 @@ body{
     box-sizing: border-box;
     background-color: rgb(34, 34, 34);
     position: relative;
-    overflow: scroll;
     overflow-x: hidden;
-    /* width: 100vw; */
     
+}
+
+.asli{
+    overflow-x: hidden;
+    width: 100vw;
+    overflow: hidden;
 }
 
 
@@ -77,7 +81,7 @@ nav i:hover{
 
 .intro p{
     margin-bottom: 30px;
-    font-size: 2vw;
+    font-size: 1rem;
     transform: translateX(200%);
     transition: transform 1s;
 }
@@ -113,7 +117,7 @@ div h1{
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
-    font-size: 4vw;
+    font-size: 3rem;
     top: -50px;
     font-weight: 6rem;
 
@@ -218,6 +222,7 @@ ul{
     /* text-align: center; */
     padding: 6px;
     font-size: 1rem;
+    z-index: 10;
 }
 
 
@@ -242,10 +247,15 @@ a{
     background-color: var(--backgColor);
     color: white;
     background-color: transparent;
+    
+}
+
+.side-container ul li a{
+    padding:0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 10px;
+
 }
 
 a >*{    background-color: transparent;
@@ -289,7 +299,6 @@ a >*{    background-color: transparent;
     font-size: 3rem;
     transition: background-color 0.2s;
     border-radius: 10px;
-    padding: 10px 30px;
     display: block;
     margin-bottom: 20px;
     position: relative;
@@ -302,15 +311,16 @@ a >*{    background-color: transparent;
 }
 
 .intro button{
-    padding: 0.7vw;
-    font-size: 1vw;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.5);
     
 }
 
 .intro button:hover{
         cursor: pointer;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.473), 0 6px 20px 0 rgba(0,0,0,0.19);
+        box-shadow: 10px 8px 16px 0 rgba(0, 0, 0, 0.473), 0 6px 20px 0 rgba(0,0,0,0.19);
      
 }
 
@@ -339,7 +349,7 @@ a >*{    background-color: transparent;
 
 [class*=card-]{
     width: 90%;
-    height: 400px;
+    height: 300px;
     text-align: center;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.87);
     background: rgba(255, 255, 255, 0.01);
@@ -381,7 +391,7 @@ a >*{    background-color: transparent;
 footer{
     width: 100%;
     position: relative;
-    height:15vh;
+    height:10vh;
     z-index:1 ;
     bottom: 0px;
     background-color: #171a1d;
@@ -389,7 +399,6 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
 
 }
 
@@ -398,6 +407,7 @@ footer small{
     font-weight: lighter;
     color: white;
     font-size: 0.8em;
+    text-align: center;
 }
 
 footer small span{
@@ -439,8 +449,31 @@ header{
     .cards-container{
         grid-template-columns: repeat(1,1fr);
     }
+    footer small{
+        font-size: 0.7em;
+    }
+
+    #h1{
+        font-size: 1.5rem;
+    }
+    #par{
+        font-size: 0.7rem
+    }
 
     
 }
 
 
+footer small{
+    font-weight: ;
+    /* visibility: hidden; */
+}
+
+
+
+
+/* -------------------- */
+.btn:hover{
+    background-color:#333;
+    transition: background-color 0.5s;
+}
