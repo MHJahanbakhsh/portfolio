@@ -263,7 +263,7 @@ a >*{    background-color: transparent;
 .side-container{
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 75vh;
     /* background-color: transparent; */
     width: 120px;
     background: transparent;
@@ -314,7 +314,8 @@ a >*{    background-color: transparent;
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #333);
+    border:1px solid silver
     
 }
 
@@ -474,6 +475,6 @@ footer small{
 
 /* -------------------- */
 .btn:hover{
-    background-color:#333;
+    background-color:rgb(136, 128, 128);
     transition: background-color 0.5s;
 }
