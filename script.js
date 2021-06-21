@@ -1,3 +1,4 @@
+
 //change navbar icon
 
 //elements
@@ -15,7 +16,6 @@ const main = document.querySelectorAll('main')[0]
 const footer = document.querySelectorAll('footer')[0]
 const svgImage = document.getElementById('svg-image')
 
-console.log(ReadMoreBtn)
 
 //add event listner
 navIcon.addEventListener('click',toggleIcon);
@@ -50,6 +50,14 @@ function showCards(){
 
 for (let i = 0; i < panel.length+1; i++) {
 
+    
+//open project detail 1
+ReadMoreBtn[i].addEventListener('click',function() {
+    panel[i].classList.remove('panel-hide');
+    main.classList.add('blur');
+    footer.classList.add('blur');
+    panel[i].style.zIndex = 5; 
+});
     //close project panel1
 closePanel[i].addEventListener('click',function () {
     panel[i].classList.add('panel-hide')
@@ -57,16 +65,8 @@ closePanel[i].addEventListener('click',function () {
     main.classList.remove('blur');
     footer.classList.remove('blur');
 });
-//open project detail 1
-ReadMoreBtn[i].addEventListener('click',function() {
-    panel[i].classList.remove('panel-hide');
-    main.classList.add('blur');
-    // body.classList.add('blur');
-    footer.classList.add('blur');
-    panel[i].style.zIndex = 5;
-});
 
-    
+
 }
 
 
@@ -80,4 +80,5 @@ function redirect() {
   }
 
 
- 
+  
+

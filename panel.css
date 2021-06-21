@@ -187,11 +187,13 @@ cursor: pointer;
         height: 500px;
         flex-direction: column;
     }
-    .snapshot{
+    .snapshot1,.snapshot2{
         width: 100%;
+        height: 200px;
     }
     .panel .exit-btn{
-        left: 0;
+        right: 0;
+        top: 0;
     }
 
     .project-detail .project-title{
@@ -201,5 +203,13 @@ cursor: pointer;
     .project-detail{
         height: 50%;
         width: 100%;
+        text-align: center;
+    }
+    .project-detail .project-desc{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .project-detail a{
+        margin-right: 10px;
     }
 }
