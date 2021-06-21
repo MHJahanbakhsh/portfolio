@@ -1,0 +1,205 @@
+.card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.card .content h2{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+    background: transparent;
+}
+
+.card .content h3{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+    background: transparent;
+    margin-top: 100px;
+}
+
+.card .content p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    background: transparent;
+    margin-top: 15px;
+}
+
+.card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 70px;
+    background: #fff;
+    color: #000;
+    border-radius:20px ;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0,0.2);
+}
+
+/* ....................panel........................ */
+
+
+
+
+.panel-father{
+    position: absolute;  
+    border-radius: 5px;
+    top: 24%;
+    right: 26%;
+    /* for button */
+}
+.panels-container{
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.panel{
+    height: 350px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    /* opacity: 1; */
+    transition: opacity 1s;
+}
+
+.panel-hide{
+    opacity: 0;
+    /* display: none; */
+
+}
+
+.snapshot1{  
+    width: 60%;
+    height: 100%;
+    background-image: url("img/exchange-site.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+
+.snapshot2{  
+    width: 60%;
+    height: 100%;
+    background-image: url("img/movie-site.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+
+.project-detail{
+    height: 100%;
+    width: 38%;
+    margin-left: 2%;
+}
+
+.project-detail .project-title{
+    margin-top: 20px;
+    color: white;
+}
+
+.project-detail ul{
+    list-style: none;
+    margin-top: 10px;
+    height: auto;
+    
+}
+
+.project-detail ul li{
+    display: inline-block;
+    border: 1px solid #151516;
+    padding:1px 4px;
+    margin: 0 2px;
+    color: #94a4b4;
+    box-shadow:2px 3px 10px rgba(0, 0, 0,0.2);
+}
+
+
+.project-detail .about{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #94a4b4;
+}
+
+.project-detail .project-desc{
+    overflow-y: scroll;
+    height: 40%;
+    margin-bottom: 30px;
+    color: #94a4b4;
+}
+
+
+
+
+
+.panel .exit-btn{
+position: absolute;
+top: 1%;
+right: 2%;
+color: #94a4b4;
+border: none;
+cursor: pointer;
+}
+
+.panel .project-detail a{
+    padding: 2px 13px;
+    color: black;
+    background: silver;
+    transition: background 0.2s;
+}
+.panel .project-detail a:hover{
+    background: white;
+}
+
+
+.blur{
+    filter: blur(5px) sepia(60%); 
+    transition: filter 1s;
+}
+
+
+
+@media(max-width:768px){
+    .panel{
+        width: 350px;
+        height: 500px;
+        flex-direction: column;
+    }
+    .snapshot{
+        width: 100%;
+    }
+    .panel .exit-btn{
+        left: 0;
+    }
+
+    .project-detail .project-title{
+        text-align: center;
+    }
+    
+    .project-detail{
+        height: 50%;
+        width: 100%;
+    }
+}
