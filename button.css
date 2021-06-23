@@ -1,7 +1,7 @@
 .intro button {
-    background-color: purple;
+    background-color: rgb(78, 58, 167);
     color: #fff;
-    border: 1px purple solid;
+    border: 1px rgb(78, 58, 167) solid;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -41,3 +41,8 @@
       padding: 10px;
     }
     }
+
+
+  
+
+    

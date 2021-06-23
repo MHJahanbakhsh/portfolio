@@ -220,7 +220,7 @@ ul{
     text-decoration: none;
     position: relative;
     left: -78px;
-    transition: left 0.4s cubcubic-bezier(.175,.885,.32,1.275);
+    transition: left 0.4s cubic-bezier(.175,.885,.32,1.275);
     background-color: transparent;
     /* text-align: center; */
     padding: 6px;
@@ -284,7 +284,7 @@ a >*{    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: top 0.2s;
+    transition: top 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000);
     z-index: 3;
 }
 
@@ -428,6 +428,11 @@ footer small span{
 header{
     background: #171a1d;
     z-index: 100;
+}
+
+#PAR{
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 /* -----------------------media queries------------------- */

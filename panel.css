@@ -123,6 +123,22 @@
     background-repeat: no-repeat;
     background-size: 100% 100%; 
 }
+.snapshot4{  
+    width: 60%;
+    height: 100%;
+    background-image: url("img/video-player.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+.snapshot5{  
+    width: 60%;
+    height: 100%;
+    background-image: url("img/drawing.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
 
 .project-detail{
     height: 100%;
