@@ -1,4 +1,39 @@
 
+//   button ripple effect
+const buttons = document.querySelectorAll('.ripple')
+
+buttons.forEach(button => {
+    button.addEventListener('click', function (e) {
+        const x = e.clientX
+        const y = e.clientY
+
+        const buttonTop = e.target.offsetTop
+        const buttonLeft = e.target.offsetLeft
+
+        const xInside = x - buttonLeft-45
+        const yInside = y - buttonTop-300
+
+        const circle = document.createElement('span')
+        circle.classList.add('circle')
+        // circle.style.top = yInside + 'px'
+        // circle.style.left = xInside + 'px'
+
+        this.appendChild(circle)
+
+        setTimeout(() => circle.remove(), 500);
+        //redirect to project.html
+        
+        location.replace("projects.html")
+          
+        
+    })
+})
+
+
+
+  
+
+
 //change navbar icon
 
 //elements
@@ -15,6 +50,7 @@ const header = document.querySelectorAll('header')[0]
 const main = document.querySelectorAll('main')[0]
 const footer = document.querySelectorAll('footer')[0]
 const svgImage = document.getElementById('svg-image')
+
 
 
 //add event listner
@@ -78,7 +114,4 @@ closePanel[i].addEventListener('click',function () {
 function redirect() {
     location.replace("index.html")
   }
-
-
-  
 

@@ -1,0 +1,43 @@
+.intro button {
+    background-color: purple;
+    color: #fff;
+    border: 1px purple solid;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative;
+  }
+  
+  .intro button:focus {
+    outline: none;
+  }
+  
+  .intro button span {
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+  }
+  
+  @keyframes scale {
+    to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
+  }
+
+
+  @media(max-width:480px){
+    .intro button{
+      font-size: 10px;
+      padding: 10px;
+    }
+    }

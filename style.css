@@ -220,7 +220,7 @@ ul{
     text-decoration: none;
     position: relative;
     left: -78px;
-    transition: left 0.4s cubic-bezier(.175,.885,.32,1.275);
+    transition: left 0.4s cubcubic-bezier(.175,.885,.32,1.275);
     background-color: transparent;
     /* text-align: center; */
     padding: 6px;
@@ -481,8 +481,3 @@ footer small{
 
 
 
-/* -------------------- */
-.btn:hover{
-    background-color:rgb(136, 128, 128);
-    transition: background-color 0.5s;
-}
